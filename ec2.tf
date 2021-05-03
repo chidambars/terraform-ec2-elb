@@ -1,6 +1,6 @@
 provider "aws" {
   region  = "us-east-2"
-  profile = "training"
+  #profile = "training"
 }
 
 resource "aws_instance" "test" {
@@ -50,7 +50,7 @@ resource "aws_instance" "test" {
 }
 
 resource "aws_security_group" "sg" {
-  name   = "tfex"
+  name   = "tfex-chidu"
   vpc_id = var.vpc_id
   ingress {
     from_port   = 80

@@ -1,5 +1,5 @@
 resource "aws_security_group" "albsg" {
-  name = "albsg-chidu"
+  name = "albsg"
   ingress {
     from_port   = 80
     to_port     = 80
